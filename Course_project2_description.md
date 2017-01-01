@@ -75,7 +75,7 @@ SCC <- readRDS("Source_Classification_Code.rds")
 You must address the following questions and tasks in your exploratory analysis. For each question/task you will need to make a single plot. Unless specified, you can use any plotting system in R to make your plot.
 
 ### Question 1
-Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
+**Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.**
 
 
 
@@ -103,7 +103,7 @@ As we can see from the plot, total emissions have decreased in the US from 1999 
 
 
 ### Question 2
-Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
+**Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.**
 
 
 
@@ -129,7 +129,7 @@ abline(lm(baltimore_emission_by_year~ years), lty = "dashed")
 Overall total emissions from PM2.5 have decreased in Baltimore City, Maryland from 1999 to 2008.
 
 ### Question 3
-Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.
+**Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008? Use the ggplot2 plotting system to make a plot answer this question.**
 
 
 
@@ -160,7 +160,7 @@ The `non-road`, `nonpoint`, `on-road` source types have all seen decreased emiss
 The `point` source saw a slight increase overall from 1999-2008. Also note that the `point` source saw a significant increase until 2005 at which point it decreases again by 2008 to just above the starting values. 
 
 ### Question 4
-Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
+**Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?**
 
 
 
@@ -194,7 +194,7 @@ Emissions from coal combustion related sources have decreased from 6 * 10^6 to b
 Eg. Emissions from coal combustion related sources have decreased by about 1/3 from 1999-2008!
 
 ### Question 5
-How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
+**How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?**
 
 
 
@@ -225,7 +225,7 @@ print(ggp)
 Emissions from motor vehicle sources have dropped from 1999-2008 in Baltimore City!
 
 ### Question 6
-Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?
+**Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles County, California (fips == "06037"). Which city has seen greater changes over time in motor vehicle emissions?**
 
 
 
